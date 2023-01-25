@@ -1,10 +1,12 @@
-import React from 'react'
-import "./Home.scss"
+import React from "react";
+import "./Home.scss";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div className="container" id="home">
+      Home
+    </div>
+  );
+};
 
-export default Home
+export default Home;

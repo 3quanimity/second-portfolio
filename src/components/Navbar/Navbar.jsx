@@ -42,7 +42,7 @@ const Navbar = () => {
         <ul className="nav_links">
           {navLinks.map((navLink, index) => (
             <li key={index}>
-              <a href={navLink}>{navLink}</a>
+              <a href={`#${navLink}`}>{navLink}</a>
             </li>
           ))}
         </ul>
@@ -77,8 +77,13 @@ const Navbar = () => {
             }}
           />
           {navLinks.map((navLink, index) => (
-            <li key={index}>
-              <a href={navLink}>{navLink}</a>
+            <li
+              key={index}
+              onClick={() => {
+                setToggle(false);
+              }}
+            >
+              <a href={`#${navLink}`}>{navLink}</a>
             </li>
           ))}
         </motion.div>
