@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.scss";
 import portfolio from "../../../assets/portfolio.png";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
@@ -17,7 +18,13 @@ const Home = () => {
         <span className="text">
           Lo-Fi Lover / Gamer / ...and Aspiring Astronaut
         </span>
-        <a href="contact">Contact Me</a>
+        <motion.a
+          href="contact"
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.2 }}
+        >
+          Contact Me
+        </motion.a>
 
         {/* Disappearing Tags  */}
         <div className="exp">3 Years Exp in IT</div>

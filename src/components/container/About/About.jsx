@@ -2,6 +2,7 @@ import React from "react";
 import "./About.scss";
 import portfolio from "../../../assets/portfolio.png";
 import { bios } from "../../../data";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -42,9 +43,14 @@ const About = () => {
               <span className="bio-value">{bio.value}</span>
             </div>
           ))}
-          <a href="#" download="">
+          <motion.a
+            href="#"
+            download=""
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.2 }}
+          >
             Download Resume
-          </a>
+          </motion.a>
         </div>
       </div>
     </div>
