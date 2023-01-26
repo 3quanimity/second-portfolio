@@ -43,7 +43,7 @@ const About = () => {
               <span className="bio-value">{bio.value}</span>
             </div>
           ))}
-          TODO: Fix download Button
+          {/* TODO: Fix download Button */}
           <motion.a
             href="../../../assets/resume_en.pdf"
             download

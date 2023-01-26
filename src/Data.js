@@ -13,6 +13,8 @@ import {
   FaInstagram,
   FaLinkedin,
   FaGithub,
+  FaAngular,
+  FaGit,
 } from "react-icons/fa";
 import { DiJavascript } from "react-icons/di";
 import { SiTypescript } from "react-icons/si";
@@ -54,28 +56,39 @@ export const icons = [
   <FaCss3 />,
   <DiJavascript />,
   <SiTypescript />,
+  <FaAngular />,
   <FaReact />,
-  <FaNodeJs />,
   <FaSass />,
-  <FaFigma />,
+  <FaGit />,
+];
+
+export const coloredIcons = [
+  <FaHtml5 color="#F06529" />,
+  <FaCss3 color="#28A4D9" />,
+  <DiJavascript color="#EFD81D" />,
+  <SiTypescript color="#3178C6" />,
+  <FaAngular color="#DD0031" />,
+  <FaReact color="#5ED4F4" />,
+  <FaSass color="#CF649A" />,
+  <FaGit color="#EC4D28" />,
 ];
 
 export const experiences = [
   {
     id: 1,
-    year: "July 2020 - Present",
+    year: "Jul 2020 - Present",
     position: "Software Developer",
     company: "VERMEG for Banking & Insurance Software",
   },
   {
     di: 2,
-    year: "January 2020 - March 2020",
+    year: "Jan 2020 - Mar 2020",
     position: "Course Creator",
     company: "GoMyCode",
   },
   {
     id: 3,
-    year: "October 2019 - December 2019",
+    year: "Oct 2019 - Dec 2019",
     position: "FullStack JavaScript Instructor",
     company: "GoMyCode",
   },
