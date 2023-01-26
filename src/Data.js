@@ -188,7 +188,7 @@ export const contacts = [
   {
     id: 1,
     icon: <FaMapMarkerAlt />,
-    infoText: "Tunisia, Tunis",
+    infoText: "Tunis, Tunisia",
   },
   {
     id: 2,
