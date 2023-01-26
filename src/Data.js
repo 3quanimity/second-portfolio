@@ -19,12 +19,12 @@ import {
 import { DiJavascript } from "react-icons/di";
 import { SiTypescript } from "react-icons/si";
 import portfolio from "./assets/portfolio.jpg";
-import work1 from "./assets/work1.png";
-import work2 from "./assets/work2.png";
-import work3 from "./assets/work3.png";
-import work4 from "./assets/work4.png";
-import work5 from "./assets/work5.png";
-import work6 from "./assets/work6.png";
+import workImg_1 from "./assets/work1.png";
+import workImg_2 from "./assets/work2.png";
+import workImg_3 from "./assets/work3.png";
+import workImg_4 from "./assets/work4.png";
+import workImg_5 from "./assets/work5.png";
+import workImg_6 from "./assets/work6.png";
 
 export const navLinks = ["home", "about", "skills", "portfolio", "contact"];
 
@@ -141,46 +141,48 @@ export const finishes = [
     itemName: "Clients Served",
   },
 ];
+
+// TODO: update this and include links
 export const workImages = [
   {
     id: 1,
-    img: work1,
+    img: workImg_1,
     name: "project 1",
-    category: "web",
+    category: "angular",
   },
   {
     id: 2,
-    img: work2,
+    img: workImg_2,
     name: "project 2",
-    category: "web",
+    category: "angular",
   },
   {
     id: 3,
-    img: work3,
+    img: workImg_3,
     name: "project 3",
-    category: "web",
+    category: "angular",
   },
   {
     id: 4,
-    img: work4,
+    img: workImg_4,
     name: "project 4",
-    category: "app",
+    category: "react",
   },
   {
     id: 5,
-    img: work5,
+    img: workImg_5,
     name: "project 5",
-    category: "app",
+    category: "react",
   },
   {
     id: 6,
-    img: work6,
+    img: workImg_6,
     name: "project 6",
-    category: "design",
+    category: "react",
   },
 ];
 
-export const workNavs = ["All", "Web", "App", "Design"];
+export const workNavs = ["All", "Angular", "React"];
 
 export const contacts = [
   {
