@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Skills.scss";
 import { coloredIcons } from "../../../data";
 import { experiences } from "../../../data";
+import { languages } from "../../../data";
 
 const Skills = () => {
   const [active, setActive] = useState(1);
@@ -48,6 +49,20 @@ const Skills = () => {
               </div>
             </div>
           ))}
+      </div>
+
+      {/* TODO: Add links to certificates */}
+      <div className="languages-container">
+        {languages.map((language) => {
+          return (
+            <div className="language" key={language.id}>
+              <div className="level">{language.level} </div>
+              <h4 className="certificate">
+                {language.language} {language.certificate}
+              </h4>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

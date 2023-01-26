@@ -93,6 +93,32 @@ export const experiences = [
     company: "GoMyCode",
   },
 ];
+
+export const languages = [
+  {
+    id: 1,
+    language: "English",
+    level: "C1",
+    certificate: "IELTS",
+    certificateLink:
+      "https://drive.google.com/file/d/1KHCmvTFZUL8ZefGfjbPY7umA-HKgjM9Y/view?usp=share_link",
+  },
+  {
+    id: 2,
+    language: "French",
+    level: "C1",
+    certificate: "TCF",
+    certificateLink:
+      "https://drive.google.com/file/d/1ggS1I7wtAX3tbqlwhX_PZbpJwpmtEKdp/view?usp=share_link",
+  },
+  {
+    id: 3,
+    language: "Arabic",
+    level: "Native",
+    certificate: null,
+    certificateLink: null,
+  },
+];
 export const finishes = [
   {
     id: 1,

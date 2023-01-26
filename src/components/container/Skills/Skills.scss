@@ -95,3 +95,18 @@
     }
   }
 }
+
+.languages-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  color: #fff;
+
+  .level {
+    color: #8c12f0;
+    font-size: 1.7rem;
+  }
+}
