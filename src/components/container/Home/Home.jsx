@@ -6,10 +6,11 @@ import { motion } from "framer-motion";
 const Home = () => {
   const moveVariants = {
     animation: {
-      y: [0, -15],
+      y: [0, -10],
       transition: {
-        yoyo: Infinity,
-        duration: 2,
+        repeat: Infinity,
+        repeatType: "reverse",
+        duration: 0.7,
         delay: 1,
       },
     },
