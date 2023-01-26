@@ -43,9 +43,10 @@ const About = () => {
               <span className="bio-value">{bio.value}</span>
             </div>
           ))}
+          TODO: Fix download Button
           <motion.a
-            href="#"
-            download=""
+            href="../../../assets/resume_en.pdf"
+            download
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.2 }}
           >
