@@ -28,13 +28,21 @@ const Portfolio = () => {
   return (
     <div className="container" id="portfolio">
       {/* Section Title  */}
-      <div className="title">
+      <motion.div
+        className="title"
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
+      >
         <span>My Work</span>
         <h1>Awesome Projects</h1>
-      </div>
+      </motion.div>
 
       {/* Navigation Buttons  */}
-      <div className="buttons">
+      <motion.div
+        className="buttons"
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
+      >
         {workNavs.map((workNav, index) => (
           <button
             onClick={(e) => activateTab(e, index)}
@@ -46,10 +54,16 @@ const Portfolio = () => {
             {workNav}
           </button>
         ))}
-      </div>
+      </motion.div>
 
       {/* Catalog  cards*/}
-      <div className="projects">
+      <motion.div
+        className="projects"
+        initial={{ x: 0, opacity: 0 }}
+        whileInView={{ x: [-250, 0], opacity: 1 }}
+        transition={{ duration: 1 }}
+        exit={{ opacity: 0, y: -50 }}
+      >
         {projects.map((project) => (
           <div className="project" key={project.id}>
             <img src={project.img} alt={`project-${project.id}`} />
@@ -79,19 +93,28 @@ const Portfolio = () => {
             </motion.div>
           </div>
         ))}
-      </div>
+      </motion.div>
 
-      <div className="talk">
+      <motion.div
+        className="talk"
+        initial={{ x: 0, opacity: 0 }}
+        whileInView={{ x: [250, 0], opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <div className="talk-left">
           <h3>
             Opportunities, requests or questions, <br />
             <span>Don't hesitate to reach out</span>
           </h3>
         </div>
-        <div className="talk-right">
+        <motion.div
+          className="talk-right"
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.3 }}
+        >
           <a href="#contact">Contact Me</a>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };
