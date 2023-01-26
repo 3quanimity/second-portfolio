@@ -39,7 +39,7 @@ export const bios = [
     id: 2,
     icon: <FaPhoneAlt />,
     key: "Phone",
-    value: "+216 50 666 009",
+    value: "+21650666009",
   },
   {
     id: 3,
