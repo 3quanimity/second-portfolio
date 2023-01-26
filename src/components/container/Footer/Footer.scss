@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 3rem;
+  max-width: 800px;
+  color: #fff;
+
+  .copyright {
+    p {
+      font-size: 0.85rem;
+    }
+  }
+}
