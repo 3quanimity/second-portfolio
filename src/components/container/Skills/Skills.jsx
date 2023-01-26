@@ -3,18 +3,27 @@ import "./Skills.scss";
 import { coloredIcons } from "../../../data";
 import { experiences } from "../../../data";
 import { languages } from "../../../data";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   const [active, setActive] = useState(1);
 
   return (
     <div className="container" id="skills">
-      <div className="title">
+      <motion.div
+        className="title"
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
+      >
         <span>What I do</span>
         <h1>Skills And Experience</h1>
-      </div>
+      </motion.div>
 
-      <div className="select">
+      <motion.div
+        className="select"
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
+      >
         <button
           onClick={() => setActive(1)}
           className={active === 1 ? "active" : ""}
@@ -27,18 +36,26 @@ const Skills = () => {
         >
           Experience
         </button>
-      </div>
+      </motion.div>
 
-      <div className="skills">
+      <motion.div
+        className="skills"
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
+      >
         {active === 1 &&
           coloredIcons.map((icon, idx) => (
             <div className="icon" key={idx}>
               {icon}
             </div>
           ))}
-      </div>
+      </motion.div>
 
-      <div className="experiencs">
+      <motion.div
+        className="experiencs"
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
+      >
         {active === 2 &&
           experiences.map((experience) => (
             <div className="experience" key={experience.id}>
@@ -49,10 +66,14 @@ const Skills = () => {
               </div>
             </div>
           ))}
-      </div>
+      </motion.div>
 
       {/* TODO: Add links to certificates */}
-      <div className="languages-container">
+      <motion.div
+        className="languages-container"
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
+      >
         {languages.map((language) => {
           return (
             <div className="language" key={language.id}>
@@ -63,7 +84,7 @@ const Skills = () => {
             </div>
           );
         })}
-      </div>
+      </motion.div>
     </div>
   );
 };
