@@ -7,15 +7,35 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <div className="container" id="about">
-      <div className="title">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="title"
+      >
         <span>Who Am I?</span>
         <h1>About me</h1>
-      </div>
+      </motion.div>
       <div className="about-container">
-        <div className="about-left">
-          <img src={portfolio} alt="about-img" />
-        </div>
-        <div className="about-right">
+        <motion.div
+          initial={{ x: 0, opacity: 0 }}
+          whileInView={{ x: [-250, 0], opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="about-left"
+        >
+          <motion.img
+            src={portfolio}
+            whileHover={{ y: -28, x: -35 }}
+            transition={{ duration: 0.3 }}
+            alt="about-img"
+          />
+        </motion.div>
+        <motion.div
+          className="about-right"
+          initial={{ x: 0, opacity: 0 }}
+          whileInView={{ x: [250, 0], opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
           <p>
             I'm a <mark>Self-Taught Developer</mark>, originally a
             graduated&nbsp;
@@ -52,7 +72,7 @@ const About = () => {
           >
             Download Resume
           </motion.a>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
