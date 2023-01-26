@@ -41,7 +41,12 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={scroll ? "header active" : "header"}>
+    <motion.div
+      initial={{ y: -25 }}
+      animate={{ y: -5 }}
+      transition={{ duration: 0.5 }}
+      className={scroll ? "header active" : "header"}
+    >
       <div className="nav_container">
         <div className="logo">
           <h3>H</h3>
@@ -95,7 +100,7 @@ const Navbar = () => {
           ))}
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
