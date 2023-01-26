@@ -4,8 +4,25 @@ import portfolio from "../../../assets/portfolio.png";
 import { motion } from "framer-motion";
 
 const Home = () => {
+  const moveVariants = {
+    animation: {
+      y: [0, -15],
+      transition: {
+        yoyo: Infinity,
+        duration: 2,
+        delay: 1,
+      },
+    },
+  };
+
   return (
-    <div className="container" id="home">
+    <motion.div
+      initial={{ y: +50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 2, delay: 0.5 }}
+      className="container"
+      id="home"
+    >
       <div className="profile">
         <img src={portfolio} alt="portfolio-img" />
       </div>
@@ -20,6 +37,8 @@ const Home = () => {
         </span>
         <motion.a
           href="contact"
+          variants={moveVariants}
+          animate="animation"
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.2 }}
         >
@@ -32,7 +51,7 @@ const Home = () => {
         <div className="engineer">Agro Engineer</div>
         <div className="phd">5 yrs PhD Studies</div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
