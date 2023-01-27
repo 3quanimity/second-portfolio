@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.scss";
 import portfolio from "../../../assets/portfolio.png";
+import resume from "../../../assets/resume_en.pdf";
 import { bios } from "../../../data";
 import { motion } from "framer-motion";
 
@@ -75,9 +76,8 @@ const About = () => {
               <span className="bio-value">{bio.value}</span>
             </div>
           ))}
-          {/* TODO: Fix download Button */}
           <motion.a
-            href="../../../assets/resume_en.pdf"
+            href={resume}
             download
             variants={moveVariants}
             animate="animation"
