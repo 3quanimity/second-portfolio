@@ -40,11 +40,12 @@
 
   .project {
     max-width: 380px;
-    height: 250px;
+    height: 213.75px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1.5rem;
     position: relative;
+    overflow: hidden;
 
     // @media screen and (max-width: 600px) {
     //   max-width: 350px;
@@ -63,7 +64,6 @@
       z-index: 5;
       top: 0;
       left: 0;
-      // background: #8c12f0c2;
       background: #8c12f093;
       display: flex;
       flex-direction: column;

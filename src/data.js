@@ -15,8 +15,8 @@ import {
 import { DiJavascript } from "react-icons/di";
 import { SiTypescript } from "react-icons/si";
 import portfolio from "./assets/portfolio.jpg";
-import workImg_1 from "./assets/work1.png";
-import workImg_2 from "./assets/work2.png";
+import workImg_1 from "./assets/projects-thumbnails/gpt3.png";
+import workImg_2 from "./assets/projects-thumbnails/prev-portfolio.gif";
 import workImg_3 from "./assets/work3.png";
 import workImg_4 from "./assets/work4.png";
 import workImg_5 from "./assets/work5.png";
@@ -145,44 +145,24 @@ export const finishes = [
   },
 ];
 
-// TODO: update this and include links
 export const workImages = [
   {
     id: 1,
     img: workImg_1,
-    name: "project 1",
-    category: "angular",
-    description: "some project about something and other things that did stuff",
+    name: "Showcase Website",
+    category: "react",
+    description: "A Showcase Website in React for GPT-3",
+    githubLink: "https://github.com/3quanimity/Modern-React-UI-UX-GPT-3",
+    liveLink: "https://3quanimity.github.io/Modern-React-UI-UX-GPT-3/",
   },
   {
     id: 2,
     img: workImg_2,
     name: "project 2",
-    category: "angular",
-  },
-  {
-    id: 3,
-    img: workImg_3,
-    name: "project 3",
-    category: "angular",
-  },
-  {
-    id: 4,
-    img: workImg_4,
-    name: "project 4",
     category: "react",
-  },
-  {
-    id: 5,
-    img: workImg_5,
-    name: "project 5",
-    category: "react",
-  },
-  {
-    id: 6,
-    img: workImg_6,
-    name: "project 6",
-    category: "react",
+    description: "My previous portfolio",
+    githubLink: "https://github.com/3quanimity/Portfolio-React",
+    liveLink: "https://haythem-portfolio.netlify.app/",
   },
 ];
 

@@ -73,10 +73,10 @@ const Portfolio = () => {
               transition={{ duration: 0.2 }}
               className="hover-layer"
             >
-              {/* TODO: update links */}
               <div className="project-links">
                 <motion.a
-                  href="#"
+                  href={project.githubLink}
+                  target="_blank"
                   whileInView={{ scale: [1, 1] }}
                   whileHover={{ scale: [1, 1.3] }}
                   transition={{ duration: 0.3 }}
@@ -84,7 +84,8 @@ const Portfolio = () => {
                   <FiGithub />
                 </motion.a>
                 <motion.a
-                  href="#"
+                  href={project.liveLink}
+                  target="_blank"
                   whileInView={{ scale: [1, 1] }}
                   whileHover={{ scale: [1, 1.3] }}
                   transition={{ duration: 0.3 }}

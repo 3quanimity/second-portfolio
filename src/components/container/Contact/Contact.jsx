@@ -4,7 +4,6 @@ import { contacts, socialIcons } from "../../../data";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
-// TODO: implement emailjs to send emails
 const Contact = () => {
   const form = useRef();
 
