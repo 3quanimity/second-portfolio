@@ -66,31 +66,36 @@ const Portfolio = () => {
       >
         {projects.map((project) => (
           <div className="project" key={project.id}>
-            <img src={project.img} alt={`project-${project.id}`} />
+            {/* Hover Layer  */}
             <motion.div
               initial={{ opacity: 0 }}
-              whileHover={{ opacity: [0, 1] }}
-              transition={{ duration: 0.3, ease: "easeInOut" }}
+              whileHover={{ opacity: 1 }}
+              transition={{ duration: 0.2 }}
               className="hover-layer"
             >
               {/* TODO: update links */}
-              <motion.a
-                href="#"
-                whileInView={{ scale: [0, 1] }}
-                whileHover={{ scale: [1, 1.3] }}
-                transition={{ duration: 0.3 }}
-              >
-                <FiGithub />
-              </motion.a>
-              <motion.a
-                href="#"
-                whileInView={{ scale: [0, 1] }}
-                whileHover={{ scale: [1, 1.3] }}
-                transition={{ duration: 0.3 }}
-              >
-                <FiEye />
-              </motion.a>
+              <div className="project-links">
+                <motion.a
+                  href="#"
+                  whileInView={{ scale: [1, 1] }}
+                  whileHover={{ scale: [1, 1.3] }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <FiGithub />
+                </motion.a>
+                <motion.a
+                  href="#"
+                  whileInView={{ scale: [1, 1] }}
+                  whileHover={{ scale: [1, 1.3] }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <FiEye />
+                </motion.a>
+              </div>
+              <h2 className="project-title">{project.name}</h2>
+              <p className="project-desc">{project.description}</p>
             </motion.div>
+            <img src={project.img} alt={`project-${project.id}`} />
           </div>
         ))}
       </motion.div>

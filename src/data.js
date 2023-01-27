@@ -152,6 +152,7 @@ export const workImages = [
     img: workImg_1,
     name: "project 1",
     category: "angular",
+    description: "some project about something and other things that did stuff",
   },
   {
     id: 2,
