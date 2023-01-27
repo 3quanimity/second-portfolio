@@ -44,6 +44,8 @@
       font-size: 0.85rem;
       margin-bottom: 1rem;
       max-width: 450px;
+      text-align: justify;
+      text-justify: inter-word;
     }
     .bio {
       display: flex;
@@ -56,10 +58,12 @@
         align-items: center;
         gap: 0.5rem;
         margin-right: 3rem;
+        color: #8c12f0;
       }
     }
     a {
       text-decoration: none;
+      margin-top: 1rem;
       color: #000;
       background: #fff;
       padding: 0.65rem 1rem;
@@ -67,6 +71,7 @@
       font-size: 0.85rem;
       text-transform: capitalize;
       width: 165px;
+      align-self: center;
     }
   }
 }

@@ -5,6 +5,18 @@ import { bios } from "../../../data";
 import { motion } from "framer-motion";
 
 const About = () => {
+  const moveVariants = {
+    animation: {
+      y: [0, -5],
+      transition: {
+        repeat: Infinity,
+        repeatType: "reverse",
+        duration: 0.7,
+        delay: 1,
+      },
+    },
+  };
+
   return (
     <div className="container" id="about">
       <motion.div
@@ -67,6 +79,8 @@ const About = () => {
           <motion.a
             href="../../../assets/resume_en.pdf"
             download
+            variants={moveVariants}
+            animate="animation"
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.2 }}
           >

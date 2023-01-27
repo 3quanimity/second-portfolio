@@ -37,7 +37,7 @@ const Home = () => {
           Lo-Fi Lover / Gamer / ...and Aspiring Astronaut
         </span>
         <motion.a
-          href="contact"
+          href="#contact"
           variants={moveVariants}
           animate="animation"
           whileHover={{ scale: 1.1 }}
