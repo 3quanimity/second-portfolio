@@ -55,16 +55,24 @@ const Contact = () => {
               Opportunities, requests or questions, don't hesitate to contact me
               using the following form. (Yes, It works! 🧙🏼‍♂️)
             </p>
-            {contacts.map((contact) => (
-              <div className="contact-left" key={contact.id}>
-                <div className="icon">{contact.icon}</div>
-                <p>{contact.infoText}</p>
-              </div>
-            ))}
+            <div>
+              {contacts.map((contact) => (
+                <div className="contact-left" key={contact.id}>
+                  <div className="icon">{contact.icon}</div>
+                  <p>{contact.infoText}</p>
+                </div>
+              ))}
+            </div>
             <div className="social-icons">
               {socialIcons.map((socialIcon) => (
                 <a href={socialIcon.link} target="_blank" rel="noreferrer">
-                  <div key={socialIcon.id}>{socialIcon.icon}</div>
+                  <motion.div
+                    key={socialIcon.id}
+                    whileHover={{ scale: 1.2 }}
+                    transition={{ duration: 0.01 }}
+                  >
+                    {socialIcon.icon}
+                  </motion.div>
                 </a>
               ))}
             </div>
@@ -78,15 +86,15 @@ const Contact = () => {
             <h3>Get In Touch</h3>
             <div className="row">
               <input type="text" placeholder="Name" name="name" required />
+              <input type="email" placeholder="Email" name="email" required />
+            </div>
+            <div className="row">
               <input
                 type="text"
                 placeholder="Subject"
                 name="subject"
                 required
               />
-            </div>
-            <div className="row">
-              <input type="email" placeholder="Email" name="email" required />
             </div>
             <div className="row">
               <textarea
@@ -97,7 +105,7 @@ const Contact = () => {
             </div>
             <motion.div
               className="btn"
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 1.03 }}
               transition={{ duration: 0.2 }}
             >
               <input type="submit" className="send-button" value="Send" />

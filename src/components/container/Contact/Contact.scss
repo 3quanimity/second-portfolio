@@ -1,4 +1,4 @@
-.contact-form {
+.contact-form form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background: #fff;
@@ -15,6 +15,10 @@
   }
 
   .contact-left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     h3 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
@@ -27,10 +31,10 @@
     .contact-left {
       display: flex;
       align-items: center;
-      margin-top: 1rem;
+      margin-top: 0.5rem;
       .icon {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         background: #8c12f0;
         color: #fff;
         display: flex;
@@ -54,13 +58,12 @@
         cursor: pointer;
         transition: all 0.3s ease;
 
-        &:hover {
-          //   opacity: 0.8;
-          color: #8c12f0;
-        }
-
         svg {
           font-size: 2rem;
+          color: black;
+          &:hover {
+            color: #8c12f0;
+          }
         }
       }
     }
