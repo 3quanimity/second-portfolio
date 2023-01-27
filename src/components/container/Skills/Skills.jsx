@@ -68,7 +68,6 @@ const Skills = () => {
           ))}
       </motion.div>
 
-      {/* TODO: Add links to certificates */}
       <motion.div
         className="languages-container"
         initial={{ opacity: 0 }}
@@ -76,12 +75,18 @@ const Skills = () => {
       >
         {languages.map((language) => {
           return (
-            <div className="language" key={language.id}>
-              <div className="level">{language.level} </div>
-              <h4 className="certificate">
-                {language.language} {language.certificate}
-              </h4>
-            </div>
+            <a
+              href={language.certificateLink}
+              target="_blank"
+              rel="noreferrer "
+            >
+              <div className="language" key={language.id}>
+                <div className="level">{language.level} </div>
+                <h4 className="certificate">
+                  {language.language} {language.certificate}
+                </h4>
+              </div>
+            </a>
           );
         })}
       </motion.div>

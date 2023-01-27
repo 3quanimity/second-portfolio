@@ -105,6 +105,28 @@
   gap: 5rem;
   color: #fff;
 
+  a {
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+      color: #8c12f0;
+      .level {
+        color: #fff;
+      }
+    }
+  }
+
+  // Prevent Native Tongue from displaying a hover effect
+  a:last-of-type {
+    &:hover {
+      color: #fff;
+      .level {
+        color: #8c12f0;
+      }
+    }
+  }
+
   .level {
     color: #8c12f0;
     font-size: 1.7rem;
