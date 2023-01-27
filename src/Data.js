@@ -28,7 +28,14 @@ import workImg_6 from "./assets/work6.png";
 
 export const navLinks = ["home", "about", "skills", "portfolio", "contact"];
 
-export const socialIcons = [<FaLinkedin />, <FaGithub />];
+export const socialIcons = [
+  {
+    id: 1,
+    icon: <FaLinkedin />,
+    link: "https://www.linkedin.com/in/haythem-ben-drissia/",
+  },
+  { id: 2, icon: <FaGithub />, link: "https://github.com/3quanimity" },
+];
 
 export const bios = [
   {
