@@ -17,7 +17,7 @@ import { SiTypescript } from "react-icons/si";
 import portfolio from "./assets/portfolio.jpg";
 import workImg_1 from "./assets/projects-thumbnails/gpt3.png";
 import workImg_2 from "./assets/projects-thumbnails/prev-portfolio.gif";
-import workImg_3 from "./assets/work3.png";
+import workImg_3 from "./assets/projects-thumbnails/catalog.png";
 import workImg_4 from "./assets/work4.png";
 import workImg_5 from "./assets/work5.png";
 import workImg_6 from "./assets/work6.png";
@@ -163,6 +163,16 @@ export const workImages = [
     description: "Animated with a functional contact form & a map.",
     githubLink: "https://github.com/3quanimity/Portfolio-React",
     liveLink: "https://haythem-portfolio.netlify.app/",
+  },
+  {
+    id: 3,
+    img: workImg_3,
+    name: "Catalog App",
+    category: "angular",
+    description:
+      "A CRUD Angular App with Routing, Authentication & Authorization (use admin:admin to login).",
+    githubLink: "https://github.com/3quanimity/catalog-angular-app",
+    liveLink: "https://catalog-angular-app.vercel.app/catalog-angular-app/",
   },
 ];
 
