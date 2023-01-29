@@ -8,7 +8,7 @@
 
 [Code With Ye](https://www.youtube.com/watch?v=tfzX8hswxRg)
 
-## Covered alongside building the website:
+## Covered alongside building the WebApp:
 
 - React Functional components and their reusability
 - React file and folder structure

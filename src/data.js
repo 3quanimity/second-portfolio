@@ -149,9 +149,9 @@ export const workImages = [
   {
     id: 1,
     img: workImg_1,
-    name: "Showcase Website",
+    name: "Showcase WebApp",
     category: "react",
-    description: "A Responsive Fake Showcase Website for GPT-3",
+    description: "A Responsive Fake Showcase WebApp for GPT-3",
     githubLink: "https://github.com/3quanimity/Modern-React-UI-UX-GPT-3",
     liveLink: "https://3quanimity.github.io/Modern-React-UI-UX-GPT-3/",
   },
