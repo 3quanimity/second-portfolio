@@ -16,6 +16,7 @@ import {
 import { SiTypescript } from 'react-icons/si';
 import workImg_1 from './assets/projects-thumbnails/gpt3.png';
 import workImg_4 from './assets/projects-thumbnails/pokedex-app.png';
+import workImg_5 from './assets/projects-thumbnails/vue-collection.png';
 
 export const navLinks = ['home', 'about', 'skills', 'portfolio', 'contact'];
 
@@ -179,10 +180,18 @@ export const workImages = [
     githubLink: 'https://github.com/3quanimity/pokemon-app-angular',
     liveLink: 'https://pokemon-app-angular.vercel.app/pokemons',
   },
+  {
+    id: 5,
+    img: workImg_5,
+    name: 'Vue Mini Projects Collection',
+    category: 'vue',
+    description: 'A collection of mini projects built with Vue for practice.',
+    githubLink: 'https://github.com/3quanimity/tuto-portfolio/tree/main',
+    liveLink: 'https://hillstone-formation-vue3.vercel.app/#/',
+  },
 ];
 
-export const workNavs = ['All', 'Angular', 'React'];
-
+export const workNavs = ['All', , 'Vue', 'Angular', 'React'];
 export const contacts = [
   {
     id: 1,

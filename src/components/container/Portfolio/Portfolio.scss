@@ -13,7 +13,7 @@
     text-transform: capitalize;
     cursor: pointer;
     margin-top: 1rem;
-    font-family: "Poppins";
+    font-family: 'Poppins';
     border-radius: 10px;
 
     &.active {
@@ -27,6 +27,11 @@
 
       &.angular {
         background-color: #dd1b16;
+      }
+
+      &.vue {
+        background-color: #4fc08d;
+        color: #000;
       }
     }
   }
