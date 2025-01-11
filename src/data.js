@@ -76,20 +76,20 @@ export const coloredIcons = [
 export const experiences = [
   {
     id: 1,
-    year: 'Jul 2020 - Present',
-    position: 'Software Developer',
-    company: 'VERMEG for Banking & Insurance Software',
+    year: 'Aug 2023 - Oct 2024',
+    position: 'Frontend Developer',
+    company: 'ConformIT',
   },
   {
-    di: 2,
-    year: 'Jan 2020 - Mar 2020',
-    position: 'Course Creator',
-    company: 'GoMyCode',
+    id: 2,
+    year: 'Jul 2020 - Jul 2023',
+    position: 'Frontend Developer',
+    company: 'VERMEG Banking and Insurance Software',
   },
   {
     id: 3,
-    year: 'Oct 2019 - Dec 2019',
-    position: 'FullStack JavaScript Instructor',
+    year: 'Oct 2019 - Mar 2020',
+    position: 'Full Stack Developer',
     company: 'GoMyCode',
   },
 ];
