@@ -50,25 +50,25 @@ export const bios = [
 ];
 
 export const icons = [
-  <FaHtml5 />,
-  <FaCss3 />,
-  <DiJavascript />,
-  <SiTypescript />,
   <FaVuejs />,
   <FaAngular />,
   <FaReact />,
   <FaSass />,
+  <FaHtml5 />,
+  <FaCss3 />,
+  <DiJavascript />,
+  <SiTypescript />,
 ];
 
 export const coloredIcons = [
-  <FaHtml5 color="#F06529" />,
-  <FaCss3 color="#28A4D9" />,
-  <DiJavascript color="#EFD81D" />,
-  <SiTypescript color="#3178C6" />,
   <FaVuejs color="#4FC08D" />,
   <FaAngular color="#DD0031" />,
   <FaReact color="#5ED4F4" />,
   <FaSass color="#CF649A" />,
+  <FaHtml5 color="#F06529" />,
+  <FaCss3 color="#28A4D9" />,
+  <DiJavascript color="#EFD81D" />,
+  <SiTypescript color="#3178C6" />,
 ];
 
 export const experiences = [
