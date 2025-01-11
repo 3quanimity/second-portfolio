@@ -1,7 +1,7 @@
-import React from "react";
-import "./Home.scss";
-import portfolio from "../../../assets/portfolio.png";
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
+import React from 'react';
+import portfolio from '../../../assets/portfolio.png';
+import './Home.scss';
 
 const Home = () => {
   const moveVariants = {
@@ -9,7 +9,7 @@ const Home = () => {
       y: [0, -10],
       transition: {
         repeat: Infinity,
-        repeatType: "reverse",
+        repeatType: 'reverse',
         duration: 0.7,
         delay: 1,
       },
@@ -47,9 +47,9 @@ const Home = () => {
         </motion.a>
 
         {/* Disappearing Tags  */}
-        <div className="exp">3 Years Exp in IT</div>
+        <div className="exp">4+ Years Exp in IT</div>
         <div className="self">Self-Taught</div>
-        <div className="engineer">Agro Engineer</div>
+        <div className="engineer">Engineer</div>
         <div className="phd">5 yrs PhD Studies</div>
       </div>
     </motion.div>
