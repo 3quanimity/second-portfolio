@@ -2,7 +2,6 @@ import { DiJavascript } from 'react-icons/di';
 import {
   FaAngular,
   FaCss3,
-  FaGit,
   FaGithub,
   FaHtml5,
   FaLinkedin,
@@ -12,6 +11,7 @@ import {
   FaReact,
   FaSass,
   FaUser,
+  FaVuejs,
 } from 'react-icons/fa';
 import { SiTypescript } from 'react-icons/si';
 import workImg_3 from './assets/projects-thumbnails/catalog.png';
@@ -56,10 +56,10 @@ export const icons = [
   <FaCss3 />,
   <DiJavascript />,
   <SiTypescript />,
+  <FaVuejs />,
   <FaAngular />,
   <FaReact />,
   <FaSass />,
-  <FaGit />,
 ];
 
 export const coloredIcons = [
@@ -67,10 +67,10 @@ export const coloredIcons = [
   <FaCss3 color="#28A4D9" />,
   <DiJavascript color="#EFD81D" />,
   <SiTypescript color="#3178C6" />,
+  <FaVuejs color="#4FC08D" />,
   <FaAngular color="#DD0031" />,
   <FaReact color="#5ED4F4" />,
   <FaSass color="#CF649A" />,
-  <FaGit color="#EC4D28" />,
 ];
 
 export const experiences = [
