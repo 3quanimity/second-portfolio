@@ -1,56 +1,53 @@
+import { DiJavascript } from 'react-icons/di';
 import {
-  FaHtml5,
+  FaAngular,
   FaCss3,
-  FaReact,
-  FaSass,
-  FaPhoneAlt,
-  FaUser,
+  FaGit,
+  FaGithub,
+  FaHtml5,
+  FaLinkedin,
   FaMapMarkerAlt,
   FaPaperPlane,
-  FaLinkedin,
-  FaGithub,
-  FaAngular,
-  FaGit,
-} from "react-icons/fa";
-import { DiJavascript } from "react-icons/di";
-import { SiTypescript } from "react-icons/si";
-import portfolio from "./assets/portfolio.jpg";
-import workImg_1 from "./assets/projects-thumbnails/gpt3.png";
-import workImg_2 from "./assets/projects-thumbnails/prev-portfolio.gif";
-import workImg_3 from "./assets/projects-thumbnails/catalog.png";
-import workImg_4 from "./assets/projects-thumbnails/pokedex-app.png";
-import workImg_5 from "./assets/work5.png";
-import workImg_6 from "./assets/work6.png";
+  FaPhoneAlt,
+  FaReact,
+  FaSass,
+  FaUser,
+} from 'react-icons/fa';
+import { SiTypescript } from 'react-icons/si';
+import workImg_3 from './assets/projects-thumbnails/catalog.png';
+import workImg_1 from './assets/projects-thumbnails/gpt3.png';
+import workImg_4 from './assets/projects-thumbnails/pokedex-app.png';
+import workImg_2 from './assets/projects-thumbnails/prev-portfolio.gif';
 
-export const navLinks = ["home", "about", "skills", "portfolio", "contact"];
+export const navLinks = ['home', 'about', 'skills', 'portfolio', 'contact'];
 
 export const socialIcons = [
   {
     id: 1,
     icon: <FaLinkedin />,
-    link: "https://www.linkedin.com/in/haythem-ben-drissia/",
+    link: 'https://www.linkedin.com/in/haythem-ben-drissia/',
   },
-  { id: 2, icon: <FaGithub />, link: "https://github.com/3quanimity" },
+  { id: 2, icon: <FaGithub />, link: 'https://github.com/3quanimity' },
 ];
 
 export const bios = [
   {
     id: 1,
     icon: <FaUser />,
-    key: "Name",
-    value: "Haythem",
+    key: 'Name',
+    value: 'Haythem',
   },
   {
     id: 2,
     icon: <FaPhoneAlt />,
-    key: "Phone",
-    value: "+21650666009",
+    key: 'Phone',
+    value: '+33 7 59 69 08 80',
   },
   {
     id: 3,
     icon: <FaPaperPlane />,
-    key: "Email",
-    value: "BenDrissiaHaythem@gmail.com",
+    key: 'Email',
+    value: 'BenDrissiaHaythem@gmail.com',
   },
 ];
 
@@ -79,45 +76,45 @@ export const coloredIcons = [
 export const experiences = [
   {
     id: 1,
-    year: "Jul 2020 - Present",
-    position: "Software Developer",
-    company: "VERMEG for Banking & Insurance Software",
+    year: 'Jul 2020 - Present',
+    position: 'Software Developer',
+    company: 'VERMEG for Banking & Insurance Software',
   },
   {
     di: 2,
-    year: "Jan 2020 - Mar 2020",
-    position: "Course Creator",
-    company: "GoMyCode",
+    year: 'Jan 2020 - Mar 2020',
+    position: 'Course Creator',
+    company: 'GoMyCode',
   },
   {
     id: 3,
-    year: "Oct 2019 - Dec 2019",
-    position: "FullStack JavaScript Instructor",
-    company: "GoMyCode",
+    year: 'Oct 2019 - Dec 2019',
+    position: 'FullStack JavaScript Instructor',
+    company: 'GoMyCode',
   },
 ];
 
 export const languages = [
   {
     id: 1,
-    language: "English",
-    level: "C1",
-    certificate: "IELTS",
+    language: 'English',
+    level: 'C1',
+    certificate: 'IELTS',
     certificateLink:
-      "https://drive.google.com/file/d/1KHCmvTFZUL8ZefGfjbPY7umA-HKgjM9Y/view?usp=share_link",
+      'https://drive.google.com/file/d/1KHCmvTFZUL8ZefGfjbPY7umA-HKgjM9Y/view?usp=share_link',
   },
   {
     id: 2,
-    language: "French",
-    level: "C1",
-    certificate: "TCF",
+    language: 'French',
+    level: 'C1',
+    certificate: 'TCF',
     certificateLink:
-      "https://drive.google.com/file/d/1ggS1I7wtAX3tbqlwhX_PZbpJwpmtEKdp/view?usp=share_link",
+      'https://drive.google.com/file/d/1ggS1I7wtAX3tbqlwhX_PZbpJwpmtEKdp/view?usp=share_link',
   },
   {
     id: 3,
-    language: "Arabic",
-    level: "Native",
+    language: 'Arabic',
+    level: 'Native',
     certificate: null,
     certificateLink: null,
   },
@@ -125,23 +122,23 @@ export const languages = [
 export const finishes = [
   {
     id: 1,
-    number: "3+",
-    itemName: "Years Of Experience",
+    number: '3+',
+    itemName: 'Years Of Experience',
   },
   {
     id: 2,
-    number: "0",
-    itemName: "Satisfied Customers",
+    number: '0',
+    itemName: 'Satisfied Customers',
   },
   {
     id: 3,
-    number: "0",
-    itemName: "Designed Items",
+    number: '0',
+    itemName: 'Designed Items',
   },
   {
     id: 4,
-    number: "0",
-    itemName: "Clients Served",
+    number: '0',
+    itemName: 'Clients Served',
   },
 ];
 
@@ -149,59 +146,59 @@ export const workImages = [
   {
     id: 1,
     img: workImg_1,
-    name: "Showcase WebApp",
-    category: "react",
-    description: "A Responsive Fake Showcase WebApp for GPT-3",
-    githubLink: "https://github.com/3quanimity/Modern-React-UI-UX-GPT-3",
-    liveLink: "https://3quanimity.github.io/Modern-React-UI-UX-GPT-3/",
+    name: 'Showcase WebApp',
+    category: 'react',
+    description: 'A Responsive Fake Showcase WebApp for GPT-3',
+    githubLink: 'https://github.com/3quanimity/Modern-React-UI-UX-GPT-3',
+    liveLink: 'https://3quanimity.github.io/Modern-React-UI-UX-GPT-3/',
   },
   {
     id: 2,
     img: workImg_2,
-    name: "My Previous Portfolio",
-    category: "react",
-    description: "Animated with a functional contact form & a map.",
-    githubLink: "https://github.com/3quanimity/Portfolio-React",
-    liveLink: "https://haythem-portfolio.netlify.app/",
+    name: 'My Previous Portfolio',
+    category: 'react',
+    description: 'Animated with a functional contact form & a map.',
+    githubLink: 'https://github.com/3quanimity/Portfolio-React',
+    liveLink: 'https://haythem-portfolio.netlify.app/',
   },
   {
     id: 3,
     img: workImg_3,
-    name: "Catalog App",
-    category: "angular",
+    name: 'Catalog App',
+    category: 'angular',
     description:
-      "A CRUD Angular App with Routing, Authentication & Authorization (use admin:admin to login).",
-    githubLink: "https://github.com/3quanimity/catalog-angular-app",
-    liveLink: "https://catalog-angular-app.vercel.app/catalog-angular-app/",
+      'A CRUD Angular App with Routing, Authentication & Authorization (use admin:admin to login).',
+    githubLink: 'https://github.com/3quanimity/catalog-angular-app',
+    liveLink: 'https://catalog-angular-app.vercel.app/catalog-angular-app/',
   },
   {
     id: 4,
     img: workImg_4,
-    name: "Pokedex App",
-    category: "angular",
+    name: 'Pokedex App',
+    category: 'angular',
     description:
-      "A CRUD Angular App with Routing & Authentication (use pika:pika to login).",
-    githubLink: "https://github.com/3quanimity/pokemon-app-angular",
-    liveLink: "https://pokemon-app-angular.vercel.app/pokemons",
+      'A CRUD Angular App with Routing & Authentication (use pika:pika to login).',
+    githubLink: 'https://github.com/3quanimity/pokemon-app-angular',
+    liveLink: 'https://pokemon-app-angular.vercel.app/pokemons',
   },
 ];
 
-export const workNavs = ["All", "Angular", "React"];
+export const workNavs = ['All', 'Angular', 'React'];
 
 export const contacts = [
   {
     id: 1,
     icon: <FaMapMarkerAlt />,
-    infoText: "Tunis, Tunisia",
+    infoText: 'Courbevoie, France',
   },
   {
     id: 2,
     icon: <FaPaperPlane />,
-    infoText: "BenDrissiaHaythem@gmail.com",
+    infoText: 'BenDrissiaHaythem@gmail.com',
   },
   {
     id: 3,
     icon: <FaPhoneAlt />,
-    infoText: "+216 50 666 009",
+    infoText: '+33 7 59 69 08 80',
   },
 ];

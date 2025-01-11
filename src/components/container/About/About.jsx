@@ -1,9 +1,9 @@
-import React from "react";
-import "./About.scss";
-import portfolio from "../../../assets/portfolio.png";
-import resume from "../../../assets/resume_en.pdf";
-import { bios } from "../../../data";
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
+import React from 'react';
+import portfolio from '../../../assets/portfolio.png';
+import resume from '../../../assets/resume_en.pdf';
+import { bios } from '../../../data';
+import './About.scss';
 
 const About = () => {
   const moveVariants = {
@@ -11,7 +11,7 @@ const About = () => {
       y: [0, -5],
       transition: {
         repeat: Infinity,
-        repeatType: "reverse",
+        repeatType: 'reverse',
         duration: 0.7,
         delay: 1,
       },
@@ -50,24 +50,28 @@ const About = () => {
           transition={{ duration: 1 }}
         >
           <p>
-            I'm a <mark>Self-Taught Developer</mark>, originally a
-            graduated&nbsp;
-            <mark>Agronomic Engineer</mark> with{" "}
-            <mark>5 years Forensic Entomology PhD studies</mark>.
+            I'm a <mark>Frontend Software Developer</mark> with over 4 years of
+            professional experience, bringing unique analytical skills from my
+            background as an <mark>Agronomic Engineer</mark> and{' '}
+            <mark>Forensic Research</mark>.
           </p>
+
           <p>
-            I've been professionally occupying the post of{" "}
-            <mark>Frontend Software Developer</mark> with{" "}
-            <mark>VERMEG for Banking & Insurance</mark> for the past{" "}
-            <mark>~3 yrs</mark>. Fell in love with the JavaScript ecosystem,
-            which only amplified my geekiness & passion for learning.
+            Most recently, I worked at <mark>ConformIT</mark>, following three
+            successful years at <mark>VERMEG Banking & Insurance</mark> where I
+            developed complex financial applications. My deep experience with
+            the JavaScript ecosystem includes working with <mark>Vue.js</mark>,{' '}
+            <mark>Angular</mark>, and <mark>React</mark>, backed by strong
+            TypeScript foundations.
           </p>
+
           <p align="LEFT">
-            I'm looking for a Frontend position, and I'm open to learning and
-            trying new technologies, even though I'm experienced in{" "}
-            <mark>Angular</mark> and still love <mark>React</mark>.
+            I'm actively seeking Frontend Developer opportunities where I can
+            contribute my experience while continuing to grow and explore new
+            technologies. I'm passionate about building intuitive, performant
+            web applications that deliver real value to users.
           </p>
-          {bios.map((bio) => (
+          {bios.map(bio => (
             <div className="bio" key={bio.id}>
               <span className="bio-key">
                 {bio.icon}
