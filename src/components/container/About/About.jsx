@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react';
-import portfolio from '../../../assets/portfolio.png';
+import portfolio from '../../../assets/portfolio.jpg';
 import resume from '../../../assets/resume_en.pdf';
 import { bios } from '../../../data';
 import './About.scss';
