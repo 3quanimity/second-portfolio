@@ -14,10 +14,8 @@ import {
   FaVuejs,
 } from 'react-icons/fa';
 import { SiTypescript } from 'react-icons/si';
-import workImg_3 from './assets/projects-thumbnails/catalog.png';
 import workImg_1 from './assets/projects-thumbnails/gpt3.png';
 import workImg_4 from './assets/projects-thumbnails/pokedex-app.png';
-import workImg_2 from './assets/projects-thumbnails/prev-portfolio.gif';
 
 export const navLinks = ['home', 'about', 'skills', 'portfolio', 'contact'];
 
@@ -152,25 +150,25 @@ export const workImages = [
     githubLink: 'https://github.com/3quanimity/Modern-React-UI-UX-GPT-3',
     liveLink: 'https://3quanimity.github.io/Modern-React-UI-UX-GPT-3/',
   },
-  {
-    id: 2,
-    img: workImg_2,
-    name: 'My Previous Portfolio',
-    category: 'react',
-    description: 'Animated with a functional contact form & a map.',
-    githubLink: 'https://github.com/3quanimity/Portfolio-React',
-    liveLink: 'https://haythem-portfolio.netlify.app/',
-  },
-  {
-    id: 3,
-    img: workImg_3,
-    name: 'Catalog App',
-    category: 'angular',
-    description:
-      'A CRUD Angular App with Routing, Authentication & Authorization (use admin:admin to login).',
-    githubLink: 'https://github.com/3quanimity/catalog-angular-app',
-    liveLink: 'https://catalog-angular-app.vercel.app/catalog-angular-app/',
-  },
+  // {
+  //   id: 2,
+  //   img: workImg_2,
+  //   name: 'My Previous Portfolio',
+  //   category: 'react',
+  //   description: 'Animated with a functional contact form & a map.',
+  //   githubLink: 'https://github.com/3quanimity/Portfolio-React',
+  //   liveLink: 'https://haythem-portfolio.netlify.app/',
+  // },
+  // {
+  //   id: 3,
+  //   img: workImg_3,
+  //   name: 'Catalog App',
+  //   category: 'angular',
+  //   description:
+  //     'A CRUD Angular App with Routing, Authentication & Authorization (use admin:admin to login).',
+  //   githubLink: 'https://github.com/3quanimity/catalog-angular-app',
+  //   liveLink: 'https://catalog-angular-app.vercel.app/catalog-angular-app/',
+  // },
   {
     id: 4,
     img: workImg_4,
